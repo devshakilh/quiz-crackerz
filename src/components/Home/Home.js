@@ -1,11 +1,21 @@
 import React from 'react';
-import Header from '../Header/Header';
+import { useLoaderData } from 'react-router-dom';
+import Quiz from '../Quiz/Quiz';
+
 
 const Home = () => {
+    const quizs = useLoaderData();
+    // console.log(quizs);
     return (
         <div>
-            <Header></Header>
-            <h1>This is Home</h1>
+
+            <h1>This is Home: {quizs.data.length}</h1>
+            {
+                quizs.data.map(quiz => <Quiz key={quiz.id}
+                    quiz={quiz}
+
+                ></Quiz>)
+            }
         </div>
     );
 };
