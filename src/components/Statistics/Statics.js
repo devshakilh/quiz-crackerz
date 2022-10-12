@@ -46,7 +46,7 @@ const Statics = () => {
     return (
         <div>
 
-            <h1 className='text-4xl text-center font-semibold'>React ApexChart</h1>
+            <h1 className='text-4xl text-center font-semibold'>React QuizChart</h1>
             <br />
             <ReactApexChart options={state.options} series={state.series} type="line" height={350} />
         </div>
