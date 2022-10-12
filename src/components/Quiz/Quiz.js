@@ -4,16 +4,17 @@ import './Quiz.css';
 const Quiz = ({ quiz }) => {
     const { id, name, logo, total } = quiz;
     return (
-        <div className=" card w-60 rounded-full shadow-xl ">
-            <div><img className='bg-zinc-300' src={logo} /></div>
-            <div className="card-body flex bg-slate-400 justify-between">
+        <div className=" card w-60  shadow-xl ">
+            <div><img className='bg-zinc-300 rounded-sm' src={logo} /></div>
+            <div className="card-body flex bg-slate-400 justify-between rounded-sm ">
 
 
-                <h2 className="card-title font-semibold ">{name}</h2>
-                <p>Total: {total}</p>
+                <h2 className="card-title font-semibold py-1 ml-1 ">{name}</h2>
+                <p className='py-1'>Total: {total}</p>
 
 
-                <button className="btn btn-outline btn-primary bg-emerald-600 rounded-md w-24 font-medium"><Link to={`/quiz/${id}`}>Start Quiz</Link></button>
+                <button className="btn btn-outline btn-primary bg-emerald-600 rounded-md w-24 font-medium  hover:bg-sky-900 py-2"><Link to={`/quiz/${id}`}>Start Quiz</Link></button>
+
 
             </div>
         </div>

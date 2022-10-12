@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Home from './components/Home/Home';
 import QuizDetails from './components/QuizDetails/QuizDetails';
 import Main from './layout/Main';
+import Statics from './components/Statistics/Statics';
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -23,6 +24,7 @@ const App = () => {
         },
 
         { path: 'blog', element: <Blog></Blog> },
+        { path: 'statics', element: <Statics></Statics> },
         {
           path: '/quiz/:quizId',
           loader: async ({ params }) => {
