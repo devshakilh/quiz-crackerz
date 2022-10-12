@@ -8,8 +8,8 @@ const Home = () => {
     // console.log(quizs);
     return (
         <div>
-            <h1 className='text-4xl font-semibold text-center py-10'>Welcome to Our Journey !</h1>
-            <div className='grid grid-cols-4 pt-4 pl-20 '>
+            <h1 className='text-4xl font-semibold text-center py-10 sm:px-0'>Welcome to Our Journey !</h1>
+            <div className='grid lg:grid-cols-4 lg:pl-20  sm:grid-cols-1  pt-4  '>
 
                 {
                     quizs.data.map(quiz => <Quiz key={quiz.id}

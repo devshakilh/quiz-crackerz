@@ -1,23 +1,28 @@
-# Smart Home Starter Repository
-
-An E-commerce platform for buying high quality Smart Home Appliances at extremely affordable Price.
 
 
-## Live Link
-Hosted in Netlify -> [Smart Home](https://shome-shop.netlify.app/)
+## Study Quix Home Starter Repository
+an programming quiz quistions and ans all ,jsvascript,react,css,and git simple quis,
 
-## Context API
 
-Documentation Link -> [Link](https://reactjs.org/docs/context.html#api)
+
 
 ## React Router Dom v6.4 
 Documentation Link -> [Link](https://reactrouter.com/en/main/start/overview)
 
-## Resources & Credits
-Tailwind Components -> 
-[Mamba UI](https://www.mambaui.com/)
-[Kitwind](https://kitwind.io/products/kometa/components)
 
-## Other Resources
-Icon -> [FlatIcon](https://www.flaticon.com/)
-Product Photos -> [Freepic](https://www.freepik.com/)
+
+## Live Link 
+Hosted in Netlify -> study quiz (https://bespoke-twilight-3b7dec.netlify.app)
+
+
+## usiang a website 
+1. HTML
+2. Javascript 
+3. react
+4. hero icon
+and 
+5. daisyui
+## api link 
+(https://openapi.programming-hero.com/api/quiz)
+
+

@@ -2,7 +2,7 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog/Blog';
-
+import ErrorPage from './components/ErrorPage/ErrorPage'
 import 'react-toastify/dist/ReactToastify.css';
 
 import Home from './components/Home/Home';
@@ -14,6 +14,7 @@ const App = () => {
     {
       path: '/',
       element: <Main></Main>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
           path: 'home',
@@ -25,6 +26,7 @@ const App = () => {
         },
 
         { path: 'blog', element: <Blog></Blog> },
+        { path: 'home', element: <Home></Home> },
         { path: 'statics', element: <Statics></Statics> },
         {
           path: '/quiz/:quizId',
@@ -33,6 +35,7 @@ const App = () => {
           },
           element: <QuizDetails></QuizDetails>
         },
+
 
       ]
     },
