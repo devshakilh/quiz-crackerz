@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import QuizDetails from './components/QuizDetails/QuizDetails';
 import Main from './layout/Main';
 import Statics from './components/Statistics/Statics';
+
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -17,17 +18,20 @@ const App = () => {
       errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
-          path: 'home',
+          path: '/home',
           loader: async () => {
             return fetch('https://openapi.programming-hero.com/api/quiz');
           },
 
           element: <Home></Home>
+
         },
 
-        { path: 'blog', element: <Blog></Blog> },
-        { path: 'home', element: <Home></Home> },
-        { path: 'statics', element: <Statics></Statics> },
+        { path: '/home', element: <Home></Home> },
+
+        { path: '/blog', element: <Blog></Blog> },
+
+        { path: '/statics', element: <Statics></Statics> },
         {
           path: '/quiz/:quizId',
           loader: async ({ params }) => {
@@ -46,6 +50,8 @@ const App = () => {
   return (
     <div>
       <RouterProvider router={router}></RouterProvider>
+
+
     </div>
   );
 };
