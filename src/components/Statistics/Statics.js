@@ -31,7 +31,9 @@ const Statics = () => {
                     opacity: 0.5
                 },
             },
-
+            xaxis: {
+                categories: ['React', 'Javascript', 'Css', 'Git'],
+            }
         },
     });
 
